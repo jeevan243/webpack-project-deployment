@@ -5,13 +5,12 @@ import "./css/todo.css";
 function appendImage() {
   const myImage = new Image();
   myImage.src = image;
-
   myImage.classList.add("image");
-
   document.getElementById("imageDiv").appendChild(myImage);
 }
 
 appendImage();
+
 var appendingDiv = document.getElementById("todoDiv");
 document.getElementById("addBtn").addEventListener("click", newElement);
 var arr = JSON.parse(localStorage.getItem("myTask")) || [];
